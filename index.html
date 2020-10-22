@@ -8,71 +8,124 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/estilo-calculator.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="js/jquery-3.5.1.min"></script>
+    <script type="text/javascript" src="js/script-calculator.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="head">
         <div id="Home">
             <h1 class="title">Hello Word</h1>
-            <p class="title">Calculator for learning HTML, CSS and JS
-                <abbr title=" Instituto de Matemática e Estatística "> IME </abbr>
+            <p class="text">Calculator for training our skills with HTML, CSS and JS
+                
             </p>
         </div>
     </header>
+    <br>
     <section>
-        <div class="container space text-uppercase">
-            <h4 class="title">Calculator</h4><br>
+        <div class="container space">
+            <h3 class="title text-uppercase">Calculator</h3><br>
 
-            <table class="table table-bordered calc">
-                <thead> <!--class="thead-dark"-->
+            <table class="calc">
+                <thead> <!--class=" table  thead-dark  table-bordered"-->
                     <tr class="title">
                         <th colspan ="5"><input class="calc_result" type="text" readonly></th>
                     </tr>
                 </thead>
-                <tbody  class="calc_btn">
+                <tbody class="center">
                     <tr>
-                        <td>&percnt;</td>
-                        <td>CE</td>
-                        <td>C</td>
-                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-backspace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <td class="calc_td_btn">
+                            <input type="button" value="&percnt;" id="percent" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="CE" id="remove" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="C" id="excluir" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="Apaga" id="excluir" class="btn btn-dark calc_btn">
+                        </td>
+                        <!--=====================================================================-->
+                        <!--<svg id="apaga" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-backspace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
-                          </svg></td>
+                        </svg>-->
+                        <!--=====================================================================-->
                     </tr>
                     <tr>
-                        <td>asdf</td>
-                        <td>asdf</td>
-                        <td>asdf</td>
-                        <td id="plus">&plus;</td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="asdf" id="nune" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="asdf" id="nune" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="asdf" id="nune" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&plus;" id="plus" class="btn btn-primary calc_btn">
+                        </td>
                     </tr>
                     <tr>
-                        <td id="num1">1</td>
-                        <td id="num2">2</td>
-                        <td id="num3">3</td>
-                        <td id="minus">&minus;</td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="1" id="num1" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="2" id="num2" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="3" id="num3" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&minus;" id="plus" class="btn btn-primary calc_btn">
+                        </td>
                     </tr>
                     <tr>
-                        <td id="num4">4</td>
-                        <td id="num5">5</td>
-                        <td id="num6">6</td>
-                        <td id="times">&times;</td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="4" id="num4" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="5" id="num5" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="6" id="num6" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&times;" id="times" class="btn btn-primary calc_btn">
+                        </td>
                     </tr>
                     <tr>
-                        <td id="num7">7</td>
-                        <td id="num8">8</td>
-                        <td id="num9">9</td>
-                        <td id="divide">&div;</td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="7" id="num7" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn"">
+                            <input type="button" value="8" id="num8" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="9" id="num9" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&div;" id="divide" class="btn btn-primary calc_btn">
+                        </td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td>0</td>
-                        <td>,</td>
-                        <td id="equals">&equals;</td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&centerdot;" id="dott" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="0" id="num0" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&comma;" id="comma" class="btn btn-primary calc_btn">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&equals;" id="equals" class="btn btn-primary calc_btn">
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
+    <br>
     <div class="copyright title">Copyright &copy; 2020 <i>Enzzo & Daniel</i></div>
     <!-- https://dev.w3.org/html5/html-author/charref //site com icones
     
@@ -96,7 +149,8 @@
 
     http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element
     
-    site para definir data e hora em um html-->
+    site para definir data e hora em um html
+-->
     
 </body>
 </html>
