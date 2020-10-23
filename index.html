@@ -8,8 +8,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/estilo-calculator.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="js/script-calculator.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="head">
@@ -28,13 +26,13 @@
             <table class="calc">
                 <thead> <!--class=" table  thead-dark  table-bordered"-->
                     <tr class="title">
-                        <th colspan ="5"><input class="calc_result" type="text" readonly></th>
+                        <th colspan ="5"><input class="calc_result" id="telaNum" type="text"></th>
                     </tr>
                 </thead>
                 <tbody class="center">
                     <tr>
                         <td class="calc_td_btn">
-                            <input type="button" value="&percnt;" id="percent" class="btn btn-primary calc_btn">
+                            <input type="button" value="&percnt;" id="percent" class="btn btn-primary calc_btn" onclick="">
                         </td>
                         <td class="calc_td_btn">
                             <input type="button" value="CE" id="remove" class="btn btn-primary calc_btn">
@@ -67,7 +65,7 @@
                     </tr>
                     <tr>
                         <td class="calc_td_btn">
-                            <input type="button" value="1" id="num1" class="btn btn-primary calc_btn">
+                            <input type="button" value="1" id="num1" class="btn btn-primary calc_btn"  onclick="javascript:add_calc('calc1,1');">
                         </td>
                         <td class="calc_td_btn">
                             <input type="button" value="2" id="num2" class="btn btn-primary calc_btn">
@@ -97,7 +95,7 @@
                         <td class="calc_td_btn">
                             <input type="button" value="7" id="num7" class="btn btn-primary calc_btn">
                         </td>
-                        <td class="calc_td_btn"">
+                        <td class="calc_td_btn">
                             <input type="button" value="8" id="num8" class="btn btn-primary calc_btn">
                         </td>
                         <td class="calc_td_btn">
@@ -112,7 +110,7 @@
                             <input type="button" value="&centerdot;" id="dott" class="btn btn-primary calc_btn">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="0" id="num0" class="btn btn-primary calc_btn">
+                            <input type="button" value="0" id="num0" class="btn btn-primary calc_btn" onclick="AddNumber">
                         </td>
                         <td class="calc_td_btn">
                             <input type="button" value="&comma;" id="comma" class="btn btn-primary calc_btn">
@@ -151,6 +149,6 @@
     
     site para definir data e hora em um html
 -->
-    
+    <script type="text/javascript" src="js/script-calculator.js"></script>
 </body>
 </html>
