@@ -26,8 +26,9 @@
             <table class="calc">
                 <thead> <!--class=" table  thead-dark  table-bordered"-->
                     <tr class="title">
-                        <th colspan ="5"><input class="calc_result" id="telaNum" type="text"></th>
-                    </tr>
+                        <th colspan ="5">
+                            <input type=number readonly class="calc_result" id='num'>
+                        </tr>
                 </thead>
                 <tbody class="center">
                     <tr>
@@ -35,16 +36,16 @@
                             <input type="button" value="&percnt;" id="percent" class="btn btn-primary calc_btn" onclick="">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="CE" id="remove" class="btn btn-primary calc_btn">
+                            <input type="button" value="CE" id="remove" class="btn btn-dark calc_btn">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="C" id="excluir" class="btn btn-primary calc_btn">
+                            <input type="button" value="C" id="excluir" class="btn btn-dark calc_btn">
                         </td>
                         <td class="calc_td_btn">
                             <input type="button" value="Apaga" id="excluir" class="btn btn-dark calc_btn">
                         </td>
                         <!--=====================================================================-->
-                        <!--<svg id="apaga" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-backspace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <!--<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-backspace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
                         </svg>-->
                         <!--=====================================================================-->
@@ -65,58 +66,58 @@
                     </tr>
                     <tr>
                         <td class="calc_td_btn">
-                            <input type="button" value="1" id="num1" class="btn btn-primary calc_btn"  onclick="javascript:add_calc('calc1,1');">
+                            <input type="button" value="1" class="btn btn-pink calc_btn" onclick="funcao('1')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="2" id="num2" class="btn btn-primary calc_btn">
+                            <input type="button" value="2" class="btn btn-pink calc_btn" onclick="funcao('2')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="3" id="num3" class="btn btn-primary calc_btn">
+                            <input type="button" value="3" class="btn btn-pink calc_btn" onclick="funcao('3')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="&minus;" id="plus" class="btn btn-primary calc_btn">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="4" id="num4" class="btn btn-primary calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="5" id="num5" class="btn btn-primary calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="6" id="num6" class="btn btn-primary calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&times;" id="times" class="btn btn-primary calc_btn">
+                            <input type="button" value="&minus;" class="btn btn-primary calc_btn" onclick="funcao('-')">
                         </td>
                     </tr>
                     <tr>
                         <td class="calc_td_btn">
-                            <input type="button" value="7" id="num7" class="btn btn-primary calc_btn">
+                            <input type="button" value="4" class="btn btn-pink calc_btn" onclick="funcao('4')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="8" id="num8" class="btn btn-primary calc_btn">
+                            <input type="button" value="5" class="btn btn-pink calc_btn" onclick="funcao('5')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="9" id="num9" class="btn btn-primary calc_btn">
+                            <input type="button" value="6" class="btn btn-pink calc_btn" onclick="funcao('6')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="&div;" id="divide" class="btn btn-primary calc_btn">
+                            <input type="button" value="&times;" class="btn btn-primary calc_btn" onclick="funcao('*')">
                         </td>
                     </tr>
                     <tr>
                         <td class="calc_td_btn">
-                            <input type="button" value="&centerdot;" id="dott" class="btn btn-primary calc_btn">
+                            <input type="button" value="7" class="btn btn-pink calc_btn" onclick="funcao('7')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="0" id="num0" class="btn btn-primary calc_btn" onclick="AddNumber">
+                            <input type="button" value="8" class="btn btn-pink calc_btn" onclick="funcao('8')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="&comma;" id="comma" class="btn btn-primary calc_btn">
+                            <input type="button" value="9" class="btn btn-pink calc_btn" onclick="funcao('9')">
                         </td>
                         <td class="calc_td_btn">
-                            <input type="button" value="&equals;" id="equals" class="btn btn-primary calc_btn">
+                            <input type="button" value="&div;" class="btn btn-primary calc_btn" onclick="funcao('/')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&centerdot;" class="btn btn-slateBlue calc_btn" onclick="funcao('.')">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="0" class="btn btn-pink calc_btn" onclick="funcao('0')">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&comma;" class="btn btn-slateBlue calc_btn"onclick="funcao(',')">
+                        </td>
+                        <td class="calc_td_btn">
+                            <input type="button" value="&equals;" class="btn btn-success calc_btn" onclick="equals()">
                         </td>
                     </tr>
                 </tbody>

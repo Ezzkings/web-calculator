@@ -104,3 +104,7 @@
 .title{text-align:center;}
 .text{text-align: center;font-size:20px;}
 .center{text-align:center;}
+/*======*/
+.btn-pink{background-color:red;color:white;}
+.btn-pink:hover{background-color:Crimson;color:white;}
+.btn-slateBlue{background-color: slateblue;color:white;}
