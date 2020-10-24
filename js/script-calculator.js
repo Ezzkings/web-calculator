@@ -2,11 +2,15 @@ function funcao(numbe){
     document.getElementById('num').value+=numbe 
 }
 
-function simbols(){
-    
+function exclu(apaga){
+    document.getElementById('num').value=""
 }
 function equals(){
-
+    try{
+        funcao(eva(document.getElementById("d").value))
+    }catch(equals){
+        c:('erro')
+    }
 }
 
 /*function addnum(){
