@@ -3,12 +3,14 @@
     position:relative;
     overflow: hidden;
 }
-.container{
-    width:30%;
-    height:525px;
+.container-calc {
+    width:31%;
+    height:520px;
     background-color:cyan;
     position:relative;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
     border-radius:20px;
 }
 .foot{
@@ -41,8 +43,13 @@
 */
 
 .calc{
+    width:30%;
+    position: relative;
+    overflow: hidden;
     background-color: rgb(172, 172, 172);
     border-radius:15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .calc_result{
     border-radius: 20px;
@@ -52,7 +59,10 @@
     margin-top:3%;
     margin-bottom:3%;
     color:black;
+    font-size:30px;
+    text-align:right;
 }
+.calc_result::placeholder{font-size:30px;text-align:right;}
 
 .calc_btn{
     font-size: 20px !important;
@@ -106,5 +116,13 @@
 .center{text-align:center;}
 /*======*/
 .btn-pink{background-color:red;color:white;}
-.btn-pink:hover{background-color:Crimson;color:white;}
+.btn-pink:hover{background-color:maroon;color:white;}
 .btn-slateBlue{background-color: slateblue;color:white;}
+.btn-slateBlue:hover{background-color: rgb(56, 29, 235);color:white;}
+
+/*/*
+.container,.container-fluid,.container-lg,.container-md,.container-sm,
+.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width:576px){.container,.container-sm{max-width:540px}}
+@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}
+@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}*/

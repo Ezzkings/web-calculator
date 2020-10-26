@@ -1,16 +1,27 @@
 function funcao(numbe){
-    document.getElementById('num').value+=numbe 
+    document.getElementById('num').value+=numbe
 }
+function removi(){
+    var apaga = ""
+    document.getElementById('num').value=apaga
+}
+function del(){
+    document.getElementById('num').value=0
+}
+function equals(){ 
+        var evalo = eval(document.getElementById('num').value)
+        document.getElementById('num').value=evalo
 
-function exclu(apaga){
-    document.getElementById('num').value=""
-}
-function equals(){
+    /*===============
     try{
-        funcao(eva(document.getElementById("d").value))
-    }catch(equals){
-        c:('erro')
+        /*
+        funcao(eval(document.getElementById('num').value))
+        
+    }catch(er){
+        er:('erro')
     }
+    ================*/
+
 }
 
 /*function addnum(){

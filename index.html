@@ -20,106 +20,106 @@
     </header>
     <br>
     <section>
-        <div class="container space">
-            <h3 class="title text-uppercase">Calculator</h3><br>
+        <div class="container-calc"><br>
+            <h3 class="title text-uppercase">Calculator</h3>
 
             <table class="calc">
-                <thead> <!--class=" table  thead-dark  table-bordered"-->
-                    <tr class="title">
-                        <th colspan ="5">
-                            <input type=number readonly class="calc_result" id='num'>
-                        </tr>
-                </thead>
-                <tbody class="center">
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&percnt;" id="percent" class="btn btn-primary calc_btn" onclick="">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="CE" id="remove" class="btn btn-dark calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="C" id="excluir" class="btn btn-dark calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&lArr;" id="excluir" class="btn btn-dark calc_btn" onclick="exclu('apaga')">
-                        </td>
+            <thead> <!--class=" table  thead-dark  table-bordered"-->
+                <tr class="title">
+                    <th colspan ="5">
+                        <input type=text placeholder="0" readonly class="calc_result" id='num'>
                     </tr>
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="asdf" id="nune" class="btn btn-primary calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="asdf" id="nune" class="btn btn-primary calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="asdf" id="nune" class="btn btn-primary calc_btn">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&plus;" id="plus" class="btn btn-primary calc_btn">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="1" class="btn btn-pink calc_btn" onclick="funcao('1')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="2" class="btn btn-pink calc_btn" onclick="funcao('2')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="3" class="btn btn-pink calc_btn" onclick="funcao('3')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&minus;" class="btn btn-primary calc_btn" onclick="funcao('-')">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="4" class="btn btn-pink calc_btn" onclick="funcao('4')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="5" class="btn btn-pink calc_btn" onclick="funcao('5')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="6" class="btn btn-pink calc_btn" onclick="funcao('6')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&times;" class="btn btn-primary calc_btn" onclick="funcao('*')">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="7" class="btn btn-pink calc_btn" onclick="funcao('7')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="8" class="btn btn-pink calc_btn" onclick="funcao('8')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="9" class="btn btn-pink calc_btn" onclick="funcao('9')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&div;" class="btn btn-primary calc_btn" onclick="funcao('/')">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&centerdot;" class="btn btn-slateBlue calc_btn" onclick="funcao('.')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="0" class="btn btn-pink calc_btn" onclick="funcao('0')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&comma;" class="btn btn-slateBlue calc_btn"onclick="funcao(',')">
-                        </td>
-                        <td class="calc_td_btn">
-                            <input type="button" value="&equals;" class="btn btn-success calc_btn" onclick="equals()">
-                        </td>
-                    </tr>
-                </tbody>
+            </thead>
+            <tbody class="center">
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" class="btn btn-primary calc_btn" >
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="CE" id="remove" class="btn btn-dark calc_btn" onclick="del()">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="C" id="excluir" class="btn btn-dark calc_btn" onclick="del()">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&lArr;" id="excluir" class="btn btn-dark calc_btn" onclick="removi()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&percnt;" class="btn btn-primary calc_btn" onclick="funcao('%')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&radic;" class="btn btn-primary calc_btn" onclick="funcao('')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&Hat;" class="btn btn-primary calc_btn" onclick="funcao('**')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&div;" class="btn btn-primary calc_btn" onclick="funcao('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" value="1" class="btn btn-pink calc_btn" onclick="funcao('1')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="2" class="btn btn-pink calc_btn" onclick="funcao('2')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="3" class="btn btn-pink calc_btn" onclick="funcao('3')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&Cross;" class="btn btn-primary calc_btn" onclick="funcao('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" value="4" class="btn btn-pink calc_btn" onclick="funcao('4')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="5" class="btn btn-pink calc_btn" onclick="funcao('5')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="6" class="btn btn-pink calc_btn" onclick="funcao('6')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&minus;" class="btn btn-primary calc_btn" onclick="funcao('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" value="7" class="btn btn-pink calc_btn" onclick="funcao('7')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="8" class="btn btn-pink calc_btn" onclick="funcao('8')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="9" class="btn btn-pink calc_btn" onclick="funcao('9')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&plus;" class="btn btn-primary calc_btn" onclick="funcao('+')">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&centerdot;" class="btn btn-slateBlue calc_btn" onclick="funcao('.')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="0" class="btn btn-pink calc_btn" onclick="funcao('0')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&comma;" class="btn btn-slateBlue calc_btn"onclick="funcao(',')">
+                    </td>
+                    <td class="calc_td_btn">
+                        <input type="button" value="&equals;" class="btn btn-success calc_btn" onclick="equals()">
+                    </td>
+                </tr>
+            </tbody>
             </table>
         </div>
     </section>
-    <br>
+        <br>
     <div class="copyright title">Copyright &copy; 2020 Enzzo Oliveira</div>
     <!-- https://dev.w3.org/html5/html-author/charref //site com icones
     
